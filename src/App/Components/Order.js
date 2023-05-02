@@ -3,7 +3,12 @@ import TopMenu from './TopMenu'
 import Footer from './Footer'
 import {Switch} from '@mui/material';
 
+
 function Order() {
+const uploadFiles=()=>{
+
+}
+
   return (
     <>
       <TopMenu active={"Order"} />
@@ -66,7 +71,7 @@ function Order() {
 
                       <label>Request Design</label>
                       <Switch />
-                   
+
                       <br />
                       <textarea placeholder="Comments & Further Instructions"></textarea>
 
@@ -74,7 +79,11 @@ function Order() {
                         Attach File (only .pdf, .jpg)
                       </label>
                       <input type="file" accept=".pdf, .jpg, .jpeg" />
-                      <input type="submit" value="Submit" />
+                      <input
+                        type="submit"
+                        value="Submit"
+                        onClick={uploadFiles}
+                      />
                     </fieldset>
                   </form>
                 </div>

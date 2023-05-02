@@ -7,6 +7,7 @@ import Order from './Components/Order';
 import Products from './Components/Products';
 import Contact from './Components/Contact';
 import About from './Components/About';
+import Admin from './Admin/Admin';
 function Entry() {
   return (
     <>
@@ -19,6 +20,7 @@ function Entry() {
         <Route path="/products" element={<Products />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </>
   );

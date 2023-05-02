@@ -1242,3 +1242,28 @@ color: white;
 background-color: #1e90fe !important;
 color: white;
 }
+
+
+
+
+
+/* 
+Flex Box */
+
+.flex{
+  display: flex;
+}
+.flex.column{
+  flex-direction: column;
+}
+.flex.row{
+  flex-direction: row;
+}
+.flex.center-all{
+justify-content: center;
+align-items: center;
+}
+.flex.between{
+  align-items: center;
+  justify-content: space-between;
+}
